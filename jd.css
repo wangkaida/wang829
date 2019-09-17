@@ -1,0 +1,409 @@
+body,ul,li,p,span,a,h3,h1,h2,div{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #f6f6f6;  
+}
+/*------header*/
+.header>div>div{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 44px;
+    background-color: red;
+}
+.anniu{
+    height: 60%;
+    width: 5%;
+    padding: 10px;
+}
+.anniu img{
+    height: 100%;
+}
+.shuru{
+    
+    height: 44px;
+    font-size: 16px;
+    line-height: 44px;
+    text-align: center;
+    color: #333;
+    overflow: hidden;
+    width: 80%;
+
+}
+.shuru>input{
+    border-radius: 10px;
+    border: 0;
+    background-color: #ffffff;
+    width: 95%;
+    height: 60%;
+    padding-left: 5%;
+    line-height: 100%;
+}
+.denglu{
+    height: 44px;
+    width: 9%;
+    line-height: 44px;
+    padding-left: 1%;
+}
+.denglu>a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.main1>div{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.bg{
+    background-image: linear-gradient(0deg,#f1503b,#c82519 50%);
+    position: absolute;
+    top: 0;
+    left: -25%;
+    height: 7.25rem;
+    width: 150%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+.lunbo{
+    float: left;
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    overflow: hidden;
+    height: 7.25rem;
+    margin-top: 10%;
+}
+.lunbo>ul{
+    width: 500%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: name 10s infinite;
+}
+.lunbo>ul li{
+    width: 18%;
+    padding:0 1%;
+    float: left;
+}
+.lunbo img{
+    width: 100%;
+    border-radius: 5%;
+}
+@-webkit-keyframes name{
+    0%{transform: translate(0,0);}
+    10%{transform: translate(0,0);}
+    20%{transform: translate(-20%,0);}
+    30%{transform: translate(-20%,0);}
+    40%{transform: translate(-40%,0);}
+    50%{transform: translate(-40%,0);}
+    60%{transform: translate(-60%,0);}
+    70%{transform: translate(-60%,0);}
+    80%{transform: translate(-80,0);}
+    90%{transform: translate(-80,0);}
+    100%{transform: translate(0,0);}
+}
+.img{
+    width: 100%;
+}
+.img>img{
+    width: 100%;
+}
+.jdcs{
+    width: 100%;
+    /* display: flex; */
+}
+.jdcs a{
+    display: block;
+    /* flex: 1; */
+    width: 20%;
+    text-align: center;
+    display: block;
+    float: left;
+    color: #333
+}
+.jdcs a img{
+    width: 50%;
+    vertical-align: top;
+}
+.jdcs a p{
+    display: block;
+    margin-top: .3rem;
+    font-size: .6rem;
+    color: #666;
+    font-size: 67.72%;
+}
+.jdms{
+    width: 100%;
+    margin: .5rem;
+}
+.jdms_top{
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABYwAAACQBAMAAABZrTKvAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURUdwTO0PD+wQEOwVFewREekNDewQEOsQEC1iODQAAAAIdFJOUwB9YxIrs0VtoD6UjwAAA/1JREFUeNrt3cGO22QUBeAprsq2qSjdUks420gOsG0VK/sBjdiWEHnNmPeXsP94aIJEQExvmWt9n/oEZ46u72877s3NVa/vPrq9gZTOa3wnDnK6U2PUGJ7YUmE3Ro3h//LtWY1/FAc5fXdW45/EQU7Pzmr8Uhzk9Pysxu/EQfrl+GdhkH+rsFOQVvVwy+12IwzS+nKu8W+iILH3pcVfCYLU9q/vbn8VAwAAAAAAAJ/I88P9m+adHMjs+1XhQSqJvVjNPsiCrKq3DzV+tZEGSf2w+tPv0iDpML7/WOM3xjE5fbE68408SOmX8xp/LQ9S7hSrC7YKMnpxWeMPEiGhZ5c1fikREnp/WWM/7CX9Cc8Zj5zeXtb4lURI6P6yxm8kQkKrv5AI+WtsGmOpAEc8+G/ccGMBPP5gATyMZgG8GsQCeFGTxZ3xnPDIyY+YWMJW4SelLIAf+LOEcexzKyyAj1+xBD5FyBL4MCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkNtGBKQvcVvpMclV7UQOZG/xrt2Yx+ReKbbddtdWkiDxMK623WhnqyD1TtEVtmOS13g/1dhyTF7jZtwd97YKstd4P/XYNGYB07gzjUld4+PUY0sFdmOwG8NVVVVdfdD8cN/YNObp2pT3fjbXa2w15mnP4nZXJu2VkrZlHO+8G8TTncXj5lvOb5srTd9Oj6K1+HFJb8yBuGG87fpJd30cT7zh9qiLnle2I9Pt+sOhrqce/21NN9U/bM/8ixZ31y95PEK73ff1pDnurp3yKn+AR+ZcVjfzOGwY16ca90cRR+a8Hze3Y2czi5kS+0M99/ho4Ia1uCoXvWa85JkVIde6aRgPw9TjfqfGYcN4Xt16syIk324cxkO9Xq/HWdFJOCrm7XzROxzNipApMcY7dbhE7IIXetE7XfKE/OlNU2Jd1ophulchkKAad2UYj7tb76XtkBqfOrye9mM1jpwW80VPyBE723ixW0//hnLBk0jctFiXo7RLXlSNh3FMTNO46Xduakad8OoyjdemccyYKPfb6hKwhENjHoYSslkROI2n7dhSERpzWd0cQCKXtnU5RUs4cqkoB2khB+V7OAU8Tgqnj9BpMZwOIEIO0J7uG5d7QY3HH3E1Lg9LB9M4qMbdfENz3Np6D6MjYy5XvLrx+CPm8HEo71ScXg3S46CYu3J/fl033r8Kybc9Lcdevoo+g/ReDQq93PXzC8ee9odOCy9qhua7nWvce/cqclqM47iZWizkoB53/Vjkpul92yo25vlHTEKOmRPtww/8BRw6juevgYgiaq0YAz52fuwYHrMWx17vfEHhM8RcvvXh/ywODli+8TnLQMAAAADwWfwBKZghRTcFaz4AAAAASUVORK5CYII=)no-repeat;
+    height: 1.7rem;
+    background-size: contain;
+}
+.jdms_top>img{
+    padding-top: .5rem;
+    height: 60%;
+}
+.jdms_con{
+    width: 100%;
+    height: 121px;
+    overflow: hidden;
+}
+.jdms_con>ul{
+    width: 76.3441px;
+    float: left;
+    margin-right: 20px;
+}
+.jdms_con>ul li{
+    width: 100%;
+    text-align: center;
+}
+.jdms_con>ul img{
+    width: 100%;
+}
+.jdms_con>ul b{
+    color: red;
+    font-size: .6rem
+}
+.jdms_con>ul s{
+    color: #666;
+    font-size: .5rem
+}
+.img2{
+    width: 100%;
+}
+.img2>img{
+    width: 100%;
+}
+.img3{
+    width: 100%;
+    text-align: center;
+}
+.img3>img{
+    width: 70%;   
+}
+
+.content1{
+    width: 100%;
+    padding: 0 2.5%;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 95%;
+    padding-top: .325rem;
+}
+.cont1{
+    display: flex;
+}
+.cont1 ul{
+    width: 49%;
+    /* border: 1px solid red; */
+    display: inline-block;
+}
+
+.cont1 ul li{
+    padding-left: .25rem;
+    line-height: 150%;
+}
+.cont1 ul li h1{
+    font-weight: 700;
+    display: inline-block;
+    max-width: 100%;
+    color: #1471FB;
+    font-size: 100%;
+}
+.cont1 ul li h2{
+    color: #666771;
+    max-width: 100%;
+    font-size: 72.5%;
+    font-weight: 400;
+}
+.cont1 ul li img{
+    width: 44.5%;
+    padding: 0 1.5%;
+}
+.cont2 ul{
+    width: 23%;
+    /* border: 1px solid red; */
+    display: inline-block;
+    border-right: 1px solid #f6f6f6;
+}
+
+.cont2 ul li{
+    padding-left: 10%;
+    line-height: 150%;
+    overflow: hidden;
+}
+.cont2 ul li h1{
+    font-weight: 700;
+    display: inline-block;
+    max-width: 100%;
+    font-size: 80%;
+    color: #666771;
+}
+.cont2 ul li h2{
+    color: #666771;
+    max-width: 80%;
+    font-size: 72.5%;
+    font-weight: 400;
+}
+.cont2 ul li img{
+    width: 90%;
+    padding: 0 1%;
+}
+.img4{
+    width: 100%;
+    text-align: center;
+}
+.img4>img{
+    width: 70%;
+}
+.img5{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    clear: both;
+    overflow: hidden;
+}
+.img5 li{
+    width: 23%;
+    float: left;
+    border: 0.5px solid #f6f6f6;
+    padding-left: 1%;
+    padding-top: 1%;
+    line-height: 150%;
+    background-color: #ffffff;
+}
+
+.img5 li h2{
+    font-size: 100%;
+    background: linear-gradient(90deg, #FF2A2A,#F139D2);
+    color: transparent;
+    background: -webkit-linear-gradient(left,#FF2A2A,#F139D2);
+    background: linear-gradient(90deg, #FF2A2A,#F139D2);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.img5 li p{
+    font-size: 68.5%;
+}
+.img5 li img{
+    width: 100%;
+}
+.img6{
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.img6 img{
+    width: 70%;
+}
+.cont3{
+    width: 100%;
+    
+}
+.cont3 li{
+    width: 48%;
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #f6f6ff;
+    padding-bottom: 15px;
+}
+.cont3 li img{
+    width: 100%;
+}
+.cont3 li p{
+    width: 100%;
+    /* height: 30%; */
+    height: 31px;
+    overflow: hidden;
+    font-size: 60%;
+    line-height: 150%
+}
+.cont3 li span{
+    color: red;
+}
+
+.foot{
+    width: 100%;
+    margin-top: 20px;
+    clear: both;
+}
+.foot ul{
+    width: 100%;
+    clear: both;
+    border: 1px solid #e5e5e5;
+
+}
+.foot ul li{
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 5px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+.foot ul:nth-of-type(1) li{
+    width: 25%;
+    height: 50px;
+}
+.foot ul:nth-of-type(1) a{
+    display: block;
+    
+    line-height: 30px;
+    height: 25px;
+    margin-top: 10px;
+    border-right: 1px solid #e5e5e5;
+    font-size: 3.73333vw;
+    overflow: hidden;
+    color: #848689;
+}
+.foot ul:nth-of-type(2){
+    width: 100%;
+    height: 160px;
+}
+.foot ul:nth-of-type(2) img{
+    height: 100%;
+}
+.foot ul:nth-of-type(2) li{
+    width: 33.3%;
+}
+.foot p{
+    text-align: center;
+    background-color: #ffffff;
+    margin-top: -35px;
+    color: #848689;
+    font-size: 1.86667vw;
+    padding: 2vw 0;
+}
+.bottom{
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+}
+.bottom a{
+    display: block;
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+.bottom a img{
+    width: 60%;
+}
